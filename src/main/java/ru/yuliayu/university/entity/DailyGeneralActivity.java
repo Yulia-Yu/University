@@ -1,8 +1,11 @@
-package ru.yuliayu.university.util;
+package ru.yuliayu.university.entity;
 
 public interface DailyGeneralActivity {
     void eat();
+
     void sleep();
-    void comeToClass();
+
+    void comeClass();
+
     void sick();
 }

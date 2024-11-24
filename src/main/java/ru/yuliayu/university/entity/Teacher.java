@@ -1,8 +1,5 @@
 package ru.yuliayu.university.entity;
 
-import ru.yuliayu.university.util.DailyGeneralActivity;
-import ru.yuliayu.university.util.TeacherActivity;
-
 public class Teacher implements DailyGeneralActivity, TeacherActivity {
     private String name;
     private int years;
@@ -78,7 +75,7 @@ public class Teacher implements DailyGeneralActivity, TeacherActivity {
     }
 
     @Override
-    public void comeToClass() {
+    public void comeClass() {
         System.out.println("Черт я преподователь, я не могу пропустить пару. Надеюсь никто не придет.");
     }
 

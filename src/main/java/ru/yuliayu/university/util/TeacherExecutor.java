@@ -1,5 +1,8 @@
 package ru.yuliayu.university.util;
 
+import ru.yuliayu.university.entity.DailyGeneralActivity;
+import ru.yuliayu.university.entity.TeacherActivity;
+
 public class TeacherExecutor {
     public void makeEat(DailyGeneralActivity dailyGeneralActivity){
         dailyGeneralActivity.eat();

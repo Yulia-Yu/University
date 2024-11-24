@@ -1,28 +1,25 @@
 package ru.yuliayu.university.entity;
 
-import ru.yuliayu.university.util.DailyGeneralActivity;
-import ru.yuliayu.university.util.StudentActivity;
-
 public class Student implements DailyGeneralActivity, StudentActivity {
     private String name;
     private int years;
-    private String directionOfTraining;
+    private String directionTraining;
     private University university;
     private Teacher teacher;
 
     public Student() {
     }
 
-    public Student(String name, int years, String directionOfTraining) {
+    public Student(String name, int years, String directionTraining) {
         this.name = name;
         this.years = years;
-        this.directionOfTraining = directionOfTraining;
+        this.directionTraining = directionTraining;
     }
 
-    public Student(String name, int years, String directionOfTraining, University university, Teacher teacher) {
+    public Student(String name, int years, String directionTraining, University university, Teacher teacher) {
         this.name = name;
         this.years = years;
-        this.directionOfTraining = directionOfTraining;
+        this.directionTraining = directionTraining;
         this.university = university;
         this.teacher = teacher;
     }
@@ -43,12 +40,12 @@ public class Student implements DailyGeneralActivity, StudentActivity {
         this.years = years;
     }
 
-    public String getDirectionOfTraining() {
-        return directionOfTraining;
+    public String getDirectionTraining() {
+        return directionTraining;
     }
 
-    public void setDirectionOfTraining(String directionOfTraining) {
-        this.directionOfTraining = directionOfTraining;
+    public void setDirectionTraining(String directionTraining) {
+        this.directionTraining = directionTraining;
     }
 
     public University getUniversity() {
@@ -78,7 +75,7 @@ public class Student implements DailyGeneralActivity, StudentActivity {
     }
 
     @Override
-    public void comeToClass() {
+    public void comeClass() {
         System.out.println("Мой любимый мат анализ, совесть не позволит пропустить эту пару. Последствия слишком критичны.");
     }
 
